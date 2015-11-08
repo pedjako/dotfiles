@@ -1,0 +1,44 @@
+[Configuration]
+MiscAlwaysShowTabs=FALSE
+MiscBell=FALSE
+MiscBordersDefault=FALSE
+MiscCursorBlinks=FALSE
+MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
+MiscDefaultGeometry=80x79
+MiscInheritGeometry=FALSE
+MiscMenubarDefault=FALSE
+MiscMouseAutohide=FALSE
+MiscToolbarDefault=FALSE
+MiscConfirmClose=TRUE
+MiscCycleTabs=TRUE
+MiscTabCloseButtons=TRUE
+MiscTabCloseMiddleClick=TRUE
+MiscTabPosition=GTK_POS_TOP
+MiscHighlightUrls=TRUE
+MiscScrollAlternateScreen=TRUE
+FontName=Ubuntu Mono 12
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
+DropdownAlwaysShowTabs=FALSE
+DropdownHeight=94
+DropdownKeepAbove=FALSE
+ColorCursor=
+# GRUVBOX
+ColorForeground=#cc241d
+ColorBackground=#282828
+ColorPalette=#282828;#cc241d;#98971a;#d79921;#458588;#b16286;#689d6a;#a89984;#928374;#fb4934;#b8bb26;#fabd2f;#83a598;#d3869b;#8ec07c;#ebdbb2
+
+# MONOKAI
+#ColorForeground=#f8f8f2
+#ColorBackground=#272822
+#ColorPalette=#272822;#f92672;#a6e22e;#f4bf75;#66d9ef;#ae81ff;#a1efe4;#f8f8f2;#75715e;#f92672;#a6e22e;#f4bf75;#66d9ef;#ae81ff;#a1efe4;#f9f8f5
+
+# 3024
+#ColorForeground=#a5a2a2
+#ColorBackground=#090300
+#ColorPalette=#090300;#db2d20;#01a252;#fded02;#01a0e4;#a16a94;#b5e4f4;#a5a2a2;#5c5855;#db2d20;#01a252;#fded02;#01a0e4;#a16a94;#b5e4f4;#f7f7f7
+
+# GREENSCREEN
+#ColorForeground=#00bb00
+#ColorBackground=#001100
+#ColorPalette=#001100;#007700;#00bb00;#007700;#009900;#00bb00;#005500;#00bb00;#007700;#007700;#00bb00;#007700;#009900;#00bb00;#005500;#00ff00
+
