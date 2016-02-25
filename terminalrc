@@ -1,10 +1,10 @@
 [Configuration]
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
-MiscBordersDefault=FALSE
+MiscBordersDefault=TRUE
 MiscCursorBlinks=FALSE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
-MiscDefaultGeometry=80x79
+MiscDefaultGeometry=80x24
 MiscInheritGeometry=FALSE
 MiscMenubarDefault=FALSE
 MiscMouseAutohide=FALSE
@@ -16,16 +16,20 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
-FontName=Ubuntu Mono 12
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-DropdownAlwaysShowTabs=FALSE
-DropdownHeight=94
-DropdownKeepAbove=FALSE
-ColorCursor=
+FontName=Ubuntu Mono 15
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
+TitleMode=TERMINAL_TITLE_HIDE
+BackgroundDarkness=0,950000
+ColorForeground=#94a3a5
+ColorBackground=#252e32
+ColorPalette=#073642;#dc322f;#859900;#b58900;#268bd2;#ec0048;#2aa198;#94a3a5;#586e75;#cb4b16;#859900;#b58900;#268bd2;#d33682;#2aa198;#6c71c4
+ColorCursor=#839496
+
 # GRUVBOX
-ColorForeground=#cc241d
-ColorBackground=#282828
-ColorPalette=#282828;#cc241d;#98971a;#d79921;#458588;#b16286;#689d6a;#a89984;#928374;#fb4934;#b8bb26;#fabd2f;#83a598;#d3869b;#8ec07c;#ebdbb2
+#ColorForeground=#cc241d
+#ColorBackground=#282828
+#ColorPalette=#282828;#cc241d;#98971a;#d79921;#458588;#b16286;#689d6a;#a89984;#928374;#fb4934;#b8bb26;#fabd2f;#83a598;#d3869b;#8ec07c;#ebdbb2
 
 # MONOKAI
 #ColorForeground=#f8f8f2
