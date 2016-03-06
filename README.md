@@ -15,3 +15,4 @@ home directory:
 				terminal
 				zathura
 				compton.conf
+				dunst

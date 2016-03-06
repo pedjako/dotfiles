@@ -21,7 +21,8 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Cantarell 9
+#font pango:Cantarell 9
+font pango:hermit 9
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -38,7 +39,7 @@ bindsym $mod+q kill
 # dmenu
 #bindsym $mod+d exec --no-startup-id dmenu_recency
 # rofi using j4-dmenu
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="/usr/bin/rofi -i -dmenu -p '' -font 'hermit 14' -bg '#000000' -hlbg '#000000' -fg '#FFFFFF' -hlfg '#01a0e4' -bc '$red' -bw 2 -opacity 70"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="/usr/bin/rofi -i -dmenu -p '' -font 'hermit 14' -bg '#282828' -hlbg '#928374' -fg '#928374' -hlfg '#282828' -bc '#282828' -bw 2 -opacity 80"
 # rofi using dmenu
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu' 
 ################################################################################################
@@ -61,6 +62,8 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Escape exec gvim
 bindsym $mod+Shift+F1 exec firefox
 bindsym $mod+F1 exec palemoon
+bindsym $mod+Shift+F11 exec luakit
+bindsym $mod+F11 exec uzbl-browser
 bindsym $mod+Shift+F2 exec gksu pcmanfm
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec zathura /home/pedja/Documents/beginningJavaScript.pdf
@@ -271,19 +274,29 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-#	position top
+	position top
 	status_command i3status
 #	wheel_up_cmd nop
 #	wheel_down_cmd nop
-	font pango:Cantarell,Icons 9
+	#font pango:Cantarell,Icons 9
+	font pango:hermit,Icons 10
 	colors {
-		separator #2ECC71
-		background #000000
-		statusline #DDDDDD
-		focused_workspace #FFFFFF #2ECC71 #000000
-		active_workspace #000000 #A4A28D #FFFFFF
-		inactive_workspace #A4A28D #000000 #DDDDDD
-		urgent_workspace #2ECC71 #900000 #FFFFFF
+		# MANJARO DEFAULT COLORS
+		#separator #2ECC71
+		#background #000000
+		#statusline #DDDDDD
+		#focused_workspace #FFFFFF #2ECC71 #000000
+		#active_workspace #000000 #A4A28D #FFFFFF
+		#inactive_workspace #A4A28D #000000 #DDDDDD
+		#urgent_workspace #2ECC71 #900000 #FFFFFF
+		# GRUVBOX
+		separator #928374
+		background #282828
+		statusline #928374
+		focused_workspace #928374 #928374 #282828
+		active_workspace #fabd2f #fabd2f #282828
+		inactive_workspace #928374 #282828 #928374
+		urgent_workspace #fb4934 #fb4934 #282828
 	}
 }
 
@@ -304,9 +317,12 @@ exec --no-startup-id compton -f -b
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 
 # Theme colors
-client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
-client.unfocused #222222 #222222 #2ECC71 #222222
-client.urgent #274D01 #900000 #FFFFFF #900000
+#client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
+client.focused #458588 #458588 #282828 #458588
+#client.unfocused #222222 #222222 #2ECC71 #222222
+client.unfocused #282828 #282828 #928374 #282828
+#client.urgent #274D01 #900000 #FFFFFF #900000
+client.urgent #fb4934 #fb4934 #928374 #fb4934
 
 #############################
 ### settings for i3-gaps: ###
