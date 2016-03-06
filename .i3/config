@@ -35,8 +35,12 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
-
+# dmenu
+#bindsym $mod+d exec --no-startup-id dmenu_recency
+# rofi using j4-dmenu
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="/usr/bin/rofi -i -dmenu -p '' -font 'hermit 14' -bg '#000000' -hlbg '#000000' -fg '#FFFFFF' -hlfg '#01a0e4' -bc '$red' -bw 2 -opacity 70"
+# rofi using dmenu
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu' 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
