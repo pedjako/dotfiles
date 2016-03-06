@@ -2,6 +2,7 @@
 STRUCTURE
 home directory:
 				.i3
+				.i3status.conf
 				.moc
 				.vim
 				.bashrc
